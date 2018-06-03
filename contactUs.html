@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bojangle's Delights</title>
+      <link href="restaurantStyle.css" rel="stylesheet" type="text/css"/>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <noscript> This website works best with Javascript enabled. Plese go to http://www.enable-javascript.com to enable JavaScript in your browser. </noscript>
+      <style>
+      #req{
+        font-weight: bold;
+      }
+
+      </style>
+    </head>
+  </head>
+
+  <body>
+    <div id="title">
+    <h1 style="text-align: center;">Bojangle's Delights</h1>
+    </div>
+
+   <hr />
+   <div class="container-fluid" id="navigation">
+     <div class="row">
+    <p>
+      <ul class="nav nav-pills">
+          <li><a href="restaurantHome.html"><span class="glyphicon glyphicon-home"></a></span></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li class="active"><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </p>
+  </div>
+   </div>
+   <hr />
+   <form action="submit.html" method="POST">
+    <label id="req" for="name">Name:</label>
+    <input type="text" id="name" name="name"> <br /><br />
+    <label id= "req" for="email">Email:</label>
+    <input type="text" id="email" name="email"><br /><br />
+    <label id= "req" for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone"><br /><br />
+    <label id= "req" for="inquiry">Reason for Inquiry:</label>
+    <select id="reason" name="reason">
+      <option value="default" selected>Catering</option>
+      <option value="privateParty">Private Party</option>
+      <option value="feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select> <br /><br />
+
+    <label for="additionalInfo">Additional Information:</label><br />
+    <textarea id="additional Info"></textarea> <br /><br />
+
+      <legend id= "req">Have you been to the restaurant?</legend>
+      <input type="radio" id="choice1" name="attended" value="No">
+      <label for="choice1">No</label>
+      <input type="radio" id="choice2" name="attended" value="Yes">
+      <label for="choice2">Yes</label>
+     <br /><br />
+
+
+      <legend id= "req">Best Days to Contact You:</legend>
+      <input type="checkbox" id="monday" name="contact" value="monday">
+      <label for="monday">M</label>
+      <input type="checkbox" id="tuesday" name="contact" value="tuesday">
+      <label for="tuesday">T</label>
+      <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+      <label for="wednesday">W</label>
+      <input type="checkbox" id="thursday" name="contact" value="thursday">
+      <label for="thursday">R</label>
+      <input type="checkbox" id="friday" name="contact" value="friday">
+      <label for="friday">F</label> <br /><br />
+
+
+    <input type="submit" name="submit" value="Send Request">
+
+  </body>
+
+  <hr />
+  <footer id="footer" style="text-align: center;">
+    <p>Bojangle Drive, Beijing, China, 5021987</p>
+    <p>102983374058</p>
+  </footer>
+
+</html>

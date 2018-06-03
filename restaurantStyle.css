@@ -1,0 +1,21 @@
+/*Common elements across all pages*/
+
+title {
+  font-family: Arial, Helvetica, Serif;
+}
+
+a:link {
+  color: #44749d;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#info {
+  background-color: #d5d2cb;
+}
